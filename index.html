@@ -7,19 +7,22 @@
     <meta http-equiv="cleartype" content="on">
     <link rel="stylesheet" href="css/normal.css"> <!-- CSS reset sheet -->
     <link rel="stylesheet" href="css/styles.css">
-    <script src="jQuery/jQuery.js"></script> <!-- jQuery API -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/functions.js"></script>
 </head>
 <body>
     
+    
+    
+    
     <div id="wrapper" class="wrapper-scroll">
-         <div id="par1"></div>
-         <div id="par2"></div>
-         <div id="par3"></div>
-            <div class="content">
+         <div id="par1" data-stellar-background-ratio="0.5"></div>
+        <section>
+            <div class="content" >
                 
-                <div class="section1">
+                <div class="section">
                    
-                    <div class="article1"> <!-- Epsiode 1 -->
+                    <div class="article1" id="bg"> <!-- Epsiode 1 -->
                         <div id="titleContainer">
             <div id="whiteBox">
                 <h1 class="failNet">Fail Net</h1>
@@ -60,7 +63,7 @@
                             <div id="footer">
                                 <img src="img/Left_Arrow.png">
                                 
-                                <img src="img/Right_Arrow">
+                                <img class="right" src="img/Right_Arrow.png">
                             </div>    
                         </div>
                         
@@ -139,35 +142,20 @@
                 </div>
                 
             </div>
+            </section>
         </div>
     
+   
     
     
     
-    
-     <script src="js/build.js"></script>
+    <script src="js/build.js"></script>
         <script>
-            function parralax() {
-                var par2 = document.getElementById('par2');
-                var par3 = document.getElementById('par3');
-                par2.style.left = -(window.pageYOffset / 10)+'px';
-                par3.style.left = -(window.pageYOffset / 10)+'px';
-            }
-            window.addEventListener("scroll", parralax, false);
-        </script>
-    
-        <script>
-            function parralax2() {
-                var article2 = document.getElementById('article2');
-                var article3 = document.getElementById('article3');
-                article2.style.left = -(window.pageYOffset / 1)+'px';
-                article3.style.left = -(window.pageYOffset / 1)+'px';
-            }
-            window.addEventListener("scroll", parralax2, false);
-        </script>
-        <script>
+            
             var horwheel = require('horwheel'),
                 view = document.getElementById('wrapper');
             horwheel(view);
+            
+   
         </script>
 </body>    

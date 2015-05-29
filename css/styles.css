@@ -14,6 +14,7 @@ body {
     right: 0;
 }
 .content {
+    left: 0px;
     width: 3862px;
     width: -moz-max-content;
     width: -webkit-max-content;
@@ -34,20 +35,16 @@ h1 {
 }
 
 #par1 {
-    position:fixed;
-    top:0px;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    width: 1400px;
+    background-image: url(../img/backgroundTemp.jpg);
+    width: 4200px;
     height: 100%;
-    background-color: #db3ea5;
-    display: inline-block;   
-    z-index: -10;
+    top:0px;
+    left:0px;
+    z-index: -1;
 }
 
 #par2 {
-    position:fixed;
+    position:absolute;
     top:0px;
     bottom:0px;
     left:1400px;
@@ -60,7 +57,7 @@ h1 {
 }
 
 #par3 {
-    position:fixed;
+    position:absolute;
     top:0px;
     bottom:0px;
     left:2800px;
@@ -208,7 +205,12 @@ audio {
     margin-left: 15px;
 }
 
-
+#bg {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
 
 
 
